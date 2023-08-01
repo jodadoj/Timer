@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Timer
 {
-    public partial class Form1 : Form
+    public partial class form_stopwatch : Form
     {
         System.Timers.Timer current_timer;
         int current_hours;
@@ -23,14 +23,12 @@ namespace Timer
         int time_02;
         int time_03;
         int time_04;
-        public Form1()
+
+        bool timer_running;
+
+        public form_stopwatch()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -87,6 +85,8 @@ namespace Timer
         private void btn_reset_Click(object sender, EventArgs e)
         {
             current_timer.Stop();
+
+            timer_running = false;
 
             string saved_time = lbl_current_time.Text;
 

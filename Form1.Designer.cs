@@ -1,6 +1,6 @@
 ﻿namespace Timer
 {
-    partial class Form1
+    partial class form_stopwatch
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@
             this.btn_start = new System.Windows.Forms.Button();
             this.btn_stop = new System.Windows.Forms.Button();
             this.btn_reset = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_history = new System.Windows.Forms.Label();
             this.lbl_time_01 = new System.Windows.Forms.Label();
             this.lbl_time_02 = new System.Windows.Forms.Label();
             this.lbl_time_03 = new System.Windows.Forms.Label();
@@ -49,7 +49,6 @@
             this.lbl_current_time.Size = new System.Drawing.Size(365, 48);
             this.lbl_current_time.TabIndex = 0;
             this.lbl_current_time.Text = "00:00:00:00";
-            this.lbl_current_time.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_start
             // 
@@ -92,16 +91,16 @@
             this.btn_reset.UseVisualStyleBackColor = false;
             this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
             // 
-            // label1
+            // lbl_history
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("BankGothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(95, 192);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 27);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Previous sessions:";
+            this.lbl_history.AutoSize = true;
+            this.lbl_history.Font = new System.Drawing.Font("BankGothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_history.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_history.Location = new System.Drawing.Point(95, 192);
+            this.lbl_history.Name = "lbl_history";
+            this.lbl_history.Size = new System.Drawing.Size(309, 27);
+            this.lbl_history.TabIndex = 4;
+            this.lbl_history.Text = "Previous sessions:";
             // 
             // lbl_time_01
             // 
@@ -147,7 +146,7 @@
             this.lbl_time_04.TabIndex = 8;
             this.lbl_time_04.Text = "00:00:00:00";
             // 
-            // Form1
+            // form_stopwatch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -158,13 +157,13 @@
             this.Controls.Add(this.lbl_time_03);
             this.Controls.Add(this.lbl_time_02);
             this.Controls.Add(this.lbl_time_01);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_history);
             this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.btn_stop);
             this.Controls.Add(this.btn_start);
             this.Controls.Add(this.lbl_current_time);
             this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Name = "Form1";
+            this.Name = "form_stopwatch";
             this.Opacity = 0.8D;
             this.Text = "Gambette senpai!!";
             this.TopMost = true;
@@ -180,7 +179,7 @@
         private System.Windows.Forms.Button btn_start;
         private System.Windows.Forms.Button btn_stop;
         private System.Windows.Forms.Button btn_reset;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_history;
         private System.Windows.Forms.Label lbl_time_01;
         private System.Windows.Forms.Label lbl_time_02;
         private System.Windows.Forms.Label lbl_time_03;
